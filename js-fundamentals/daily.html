@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>JS HOMEWORK</title>
+    <meta name="description" content="An example basic webpage from The Iron Yard.">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+</head>
+
+<body>
+<main>
+    <audio id="player" src="champion.mp3" controls loop>
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <button id="play">Play</button>
+</main>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+
+<!-- <script src="drills-1.js"></script> -->
+<script>
+    var player = document.getElementById('player')
+    var play = document.getElementById('play')
+    play.addEventListener('click', function() {
+        player.play()
+    })
+
+    play.addEventListener('mouseup', function() {
+        player.pause()
+    })
+</script>
+<script src="drills-2.js"></script>
+
+</body>
+</html>
